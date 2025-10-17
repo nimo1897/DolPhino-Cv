@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de CV Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#4f46e5',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-400 text-light">
+    <!-- Navigation -->
+    <nav class="bg-dark/80 backdrop-blur-md sticky top-0 z-40 border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="img/logo.webp" class="w-18 h-12">
+                    <span class="text-xl font-extrabold text-white">DolPhino-CV</span>
+                </div>
+                <button 
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+                    class="bg-primary hover:bg-emerald-400 px-4 py-2 rounded-lg transition-colors text-white">
+                    Nous Contacter
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-emerald-300">Modèles de CV Professionnels</h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            Démarquez-vous de la concurrence avec nos modèles de CV soigneusement conçus qui attirent l'attention des employeurs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700">✓ Optimisé ATS</span>
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700">✓ Entièrement Personnalisable</span>
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700">✓ Optimisé Mobile</span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 pb-16">
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <span class="bg-dark border border-primary px-4 py-2 rounded-lg">Tous les Modèles</span>
+            <span class="bg-dark border border-primary px-4 py-2 rounded-lg">Moderne</span>
+            <span class="bg-dark border border-primary px-4 py-2 rounded-lg">Créatif</span>
+            <span class="bg-dark border border-primary px-4 py-2 rounded-lg">Executive</span>
+            <span class="bg-dark border border-primary px-4 py-2 rounded-lg">Minimaliste</span>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CV Card 1 - A -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/A.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="1">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Créatif pour Designer UX Senior</h3>
+                        
+                    </div>
+                    <p class="text-gray-400 mb-4">Modèle moderne et élégant, idéal pour les professionnels 
+                      du design et de la création numérique.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-primary font-bold">40$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 2 - B-->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/B.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="2">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Professionnel pour Manager RH Senior</h3>
+                        
+                    </div>
+                    <p class="text-gray-400 mb-4">Mise en page claire et structurée, parfaite pour les cadres en 
+                      ressources humaines ou en gestion d’équipe.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-primary font-bold">40$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 3 - C -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/C.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="3">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Élégant pour Manager RH Expérimenté</h3>
+                        
+                    </div>
+                    <p class="text-gray-400 mb-4">Style sobre et professionnel, idéal pour les candidats 
+                      en management ou direction RH.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-primary font-bold">35$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 4 - D -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/D.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="4">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Technique pour Développeur Backend</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Modèle sombre et moderne, parfait pour les ingénieurs logiciels 
+                      ou développeurs spécialisés en backend.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-primary font-bold">35$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 5 - E -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/E.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="5">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Moderne pour Ingénieure Logicielle Senior</h3>
+                        <span class="text-primary font-bold">29€</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Mise en page claire et structurée, adaptée aux professionnels 
+                      de la tech et du développement web.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-primary font-bold">40$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 6 - F-->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/F.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="6">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Professionnel pour Cheffe de Projet Senior</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Design bleu élégant et équilibré, idéal pour les chefs de projet 
+                      ou managers internationaux.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-primary font-bold">30$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 7 - BB -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/BB.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="7">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Dynamique pour Responsable RH</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Design coloré et énergique, adapté aux profils de leadership 
+                      cherchant à se démarquer visuellement.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-primary font-bold">35$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Card 8 - CC -->
+            <div class="group bg-dark/50 backdrop-blur-sm rounded-2xl border border-gray-700 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-2xl hover:shadow-primary/20">
+                <div class="relative overflow-hidden">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                        Populaire
+                    </div>
+                    <img src="img/CC.webp" 
+                         alt="Modèle Neo CV" 
+                         class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 preview-btn" data-cv="8">
+                            Aperçu du Modèle
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">CV Classique pour Professionnel des Ressources</h3>                       
+                    </div>
+                    <p class="text-gray-400 mb-4">Présentation épurée et sérieuse, convenant aux postes corporate 
+                      ou aux candidatures formelles.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-primary font-bold">30$</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 md:p-12">
+            <h2 class="text-3xl font-bold mb-4">Prêt à Transformer Votre Carrière ?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Choisissez parmi nos modèles professionnels et créez un CV qui donne des résultats</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-dark transition-colors">
+                    Nous Contacter
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark border-t border-gray-700 py-12 ff">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="img/logo.webp" class="w-8 h-8">
+                        <span class="text-xl font-bold">DolPhino-CV</span>
+                    </div>
+                    <p class="text-gray-50">Modèles de CV professionnels conçus pour vous aider à décrocher le job de vos rêves.</p>
+                </div>
+                <div>
+                    <button class="font-extrabold mb-4 bg-primary px-6 py-2 rounded-lg ">Modèles</button>
+                    <ul class="space-y-4 text-gray-200">
+                        <li><a href="#" class="border border-teal-300 px-2 rounded-lg py-1 font-bold transition-colors">Moderne</a></li>
+                        <li><a href="#" class="border border-teal-300 px-2 rounded-lg py-1 font-bold transition-colors">Créatif</a></li>
+                        <li><a href="#" class="border border-teal-300 px-2 rounded-lg py-1 font-bold transition-colors">Executive</a></li>
+                        <li><a href="#" class="border border-teal-300 px-2 rounded-lg py-1 font-bold transition-colors">Minimaliste</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-extrabold mb-4 text-yellow-200">Connectez-vous</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/21696212580" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="http://tiktok.com/@delphidolphinos1897" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 DolPhino-CV. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="cvModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300">
+        <div class="bg-dark border border-gray-700 rounded-2xl max-w-4xl w-full mx-4 overflow-hidden transform transition-transform duration-300 scale-95 modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-gray-700">
+                <h3 class="text-xl font-semibold">Aperçu du Modèle</h3>
+                <button id="closeModal" class="text-gray-400 hover:text-white transition-colors duration-300 bg-gray-700 w-8 h-8 rounded-full flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 max-h-[70vh] overflow-y-auto">
+                <img id="modalImage" src="" alt="Modèle de CV" class="w-full rounded-lg shadow-lg">
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a id="whatsappBtn" href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-green-600">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Contacter via WhatsApp</span>
+                    </a>
+                    <button class="border border-primary text-primary px-6 py-3 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-white">
+                        Acheter le Modèle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('cvModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            const previewButtons = document.querySelectorAll('.preview-btn');
+            
+            // CV data with images and titles
+            const cvData = {
+                1: {
+                    image: 'img/A.webp',
+                    title: 'Neo Professionnel',
+                    price: '29€'
+                },
+                2: {
+                    image: 'img/B.webp',
+                    title: 'Vision Créative',
+                    price: '35€'
+                },
+                3: {
+                    image: 'img/C.webp',
+                    title: 'Executive Elite',
+                    price: '45€'
+                },
+                4: {
+                    image: 'img/D.webp',
+                    title: 'Minimaliste Pro',
+                    price: '25€'
+                },
+                5: {
+                    image: 'img/E.webp',
+                    title: 'Innovateur Tech',
+                    price: '32€'
+                },
+                6: {
+                    image: 'img/F.webp',
+                    title: 'Universitaire',
+                    price: '38€'
+                },
+
+                7: {
+                    image: 'img/BB.webp',
+                    title: 'Universitaire',
+                    price: '38€'
+                },
+
+                8: {
+                    image: 'img/CC.webp',
+                    title: 'Universitaire',
+                    price: '38€'
+                }
+            };
+
+            // Function to open modal
+            function openModal(cvId) {
+                const cv = cvData[cvId];
+                if (cv) {
+                    modalImage.src = cv.image;
+                    modalImage.alt = cv.title;
+                    
+                    // Set WhatsApp link with the CV title as a message
+                    const message = `Bonjour ! Je suis intéressé(e) par le modèle de CV "${cv.title}" (${cv.price}). Pouvez-vous me fournir plus de détails ?`;
+                    const encodedMessage = encodeURIComponent(message);
+                    whatsappBtn.href = `https://wa.me/21696212580?text=${encodedMessage}`;
+                    
+                    modal.classList.remove('hidden');
+                    setTimeout(() => {
+                        modal.classList.add('opacity-100');
+                        document.querySelector('.modal-content').classList.remove('scale-95');
+                        document.querySelector('.modal-content').classList.add('scale-100');
+                    }, 10);
+                }
+            }
+
+            // Function to close modal
+            function closeModalFunc() {
+                modal.classList.remove('opacity-100');
+                document.querySelector('.modal-content').classList.remove('scale-100');
+                document.querySelector('.modal-content').classList.add('scale-95');
+                
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+
+            // Add event listeners to preview buttons
+            previewButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const cvId = button.getAttribute('data-cv');
+                    openModal(cvId);
+                });
+            });
+
+            // Close modal when clicking close button
+            closeModal.addEventListener('click', closeModalFunc);
+
+            // Close modal when clicking outside the modal content
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModalFunc();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModalFunc();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
